@@ -3,12 +3,12 @@ den1 = [1 2 10];
 num2 = [5];
 den2 = [1 5];
 
-[num, den] = series(num1,den1,num2,den2);
-printsys(num,den)
+%Precisa disso pra o forge
+tf1 = tf(num1,den1);
+tf2 = tf(num2,den2);
 
-[num, den] = parallel(num1,den1,num2,den2);
-printsys(num,den)
+xxx = series(tf1,tf2)
 
+yyy = parallel(tf1,tf2)
 
-[num, den] = feedback(num1,den1,num2,den2);
-printsys(num,den)
+zzz = feedback(tf1,tf2)
