@@ -12,6 +12,12 @@
 ## Install
 
 ```
+# apt-get install octave
+# apt-get install $( apt-cache search octave-forge | awk '{printf $1; printf " "}' )
+```
+ou ainda
+```
+# apt-cache search octave-forge | awk '{printf $1; printf " "}' )
 ```
 
 ## Usage
